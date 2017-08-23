@@ -12,8 +12,14 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
-
+app.get('/file-one', function (req, res) {
+  res.send( 'file  is served here ');
+});
+app.get('/file-two', function (req, res) {
+  res.send( 'file  is served here ');
+});app.get('/file-three', function (req, res) {
+  res.send( 'file  is served here ');
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
